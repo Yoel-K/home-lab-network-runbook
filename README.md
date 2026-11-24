@@ -2,7 +2,7 @@
 
 A segmented home network built on a UniFi Dream Router 7 and a Proxmox host, documented the way a network or infrastructure team would document it: diagrams, IP and VLAN plan, firewall rules, test results, troubleshooting write-ups, and incident and change records.
 
-**Author:** Yoel Kaleb | **Version:** 2.0 | **Last updated:** November 2026
+**Author:** [Your Name] | **Version:** 2.0 | **Last updated:** November 2026
 
 ---
 
@@ -46,15 +46,15 @@ I built this lab to practice network segmentation, firewalling, centralized logg
 ## Design highlights
 
 - **Zone-based segmentation.** Five firewall zones, with traffic between zones denied by default and explicit policies allowing only what is needed.
-- **Least-privilege outbound access.** Servers can reach the internet only on specific ports and, for web and NTP traffic, only from named hosts. Splunk has no internet access.
-- **Isolated DMZ.** The DMZ cannot start connections to any internal network. The trusted Personal network can reach it, with return traffic only.
+- **Least-privilege outbound access.** Servers can reach the internet only on specific ports and, for DNS, web, and NTP traffic, only from a named host. Splunk has no internet access.
+- **Isolated DMZ.** The DMZ cannot start connections to any internal network, and its internet access is limited to DNS, HTTP, and HTTPS for updates. The trusted Personal network can reach it, with return traffic only.
 - **Untrusted Wi-Fi.** Wireless clients are blocked from every internal network.
 - **Centralized logging.** The router sends syslog to Splunk over UDP 5514 (a high port, because Splunk runs as a non-root user).
 - **Minimal remote access.** Tailscale connects outbound only, with no inbound ports opened. The subnet router advertises only the Management network.
 
 ## Testing
 
-The runbook includes a testing log with 17 documented tests, all passing, covering:
+The runbook includes a testing log with 19 documented tests, all passing, covering:
 
 - Isolation between zones (Wireless, DMZ, Servers, and Management blocked from the networks they should not reach)
 - Allowed paths (admin access from Personal, Splunk web interface)
@@ -93,4 +93,4 @@ This is a personal lab. Private IP ranges are shown for documentation purposes. 
 
 ## Contact
 
-Yoel Kaleb | [Linkedin](https://www.linkedin.com/in/yoel-kaleb) | yoelk49@gmail.com
+[Your Name] | [LinkedIn URL] | [Email]
