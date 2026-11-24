@@ -93,4 +93,4 @@ This is a personal lab. Private IP ranges are shown for documentation purposes. 
 
 ## Contact
 
-Yoel Kaleb | [Linkedin](https://www.linkedin.com/in/yoel-kaleb-67aab63a6) | yoelk49@gmail.com
+Yoel Kaleb | [Linkedin](https://www.linkedin.com/in/yoel-kaleb) | yoelk49@gmail.com
