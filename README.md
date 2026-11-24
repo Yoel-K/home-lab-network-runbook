@@ -2,7 +2,7 @@
 
 A segmented home network built on a UniFi Dream Router 7 and a Proxmox host, documented the way a network or infrastructure team would document it: diagrams, IP and VLAN plan, firewall rules, test results, troubleshooting write-ups, and incident and change records.
 
-**Author:** [Your Name] | **Version:** 2.0 | **Last updated:** November 2026
+**Author:** Yoel Kaleb | **Version:** 2.0 | **Last updated:** November 2026
 
 ---
 
